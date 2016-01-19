@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ynE-E9-8GG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="vZt-dQ-7Fu">
+            <objects>
+                <viewController id="uVw-Kg-aQD" customClass="MasterViewController" customModule="AniSplitViewSimple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h9a-VS-sUk"/>
+                        <viewControllerLayoutGuide type="bottom" id="0QO-vV-AHL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o8U-GO-Gn2">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="280"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBA-AG-idA">
+                                <rect key="frame" x="74" y="16" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d45-qk-yd7">
+                                <rect key="frame" x="63" y="53" width="76" height="30"/>
+                                <state key="normal" title="showDetail"/>
+                                <connections>
+                                    <action selector="showDetailAction:" destination="uVw-Kg-aQD" eventType="touchUpInside" id="JK2-rv-vyq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.25490196079999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HBA-AG-idA" firstAttribute="centerX" secondItem="o8U-GO-Gn2" secondAttribute="centerX" id="6qT-ZP-Gmr"/>
+                            <constraint firstItem="HBA-AG-idA" firstAttribute="top" secondItem="o8U-GO-Gn2" secondAttribute="topMargin" constant="16" id="Lyt-KU-3FJ"/>
+                            <constraint firstItem="d45-qk-yd7" firstAttribute="centerX" secondItem="HBA-AG-idA" secondAttribute="centerX" id="dbK-lg-6Yw"/>
+                            <constraint firstItem="d45-qk-yd7" firstAttribute="top" secondItem="HBA-AG-idA" secondAttribute="bottom" constant="16" id="xx8-Du-LMf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQE-gg-Ehr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="836"/>
+        </scene>
+        <!--Animating Split View Controller-->
+        <scene sceneID="sqz-OK-Pzd">
+            <objects>
+                <viewController id="ynE-E9-8GG" customClass="AnimatingSplitViewController" customModule="AniSplitViewSimple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v7V-dR-2SR"/>
+                        <viewControllerLayoutGuide type="bottom" id="WRK-hO-f5H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lLf-QO-K8P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oK-AI-CP4">
+                                <rect key="frame" x="0.0" y="20" width="200" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="03v-9D-mS7"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="uVw-Kg-aQD" kind="embed" id="FV5-MR-gnz"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MmW-K6-nd5">
+                                <rect key="frame" x="200" y="20" width="400" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="asp-iR-ux8"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="GrU-j2-GxM" kind="embed" id="3Pp-NQ-Sys"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MmW-K6-nd5" firstAttribute="leading" secondItem="5oK-AI-CP4" secondAttribute="trailing" id="8X0-sV-Tdy"/>
+                            <constraint firstItem="WRK-hO-f5H" firstAttribute="top" secondItem="MmW-K6-nd5" secondAttribute="bottom" id="9Ta-vJ-EZl"/>
+                            <constraint firstItem="MmW-K6-nd5" firstAttribute="top" secondItem="v7V-dR-2SR" secondAttribute="bottom" id="Gjx-fX-0q6"/>
+                            <constraint firstItem="5oK-AI-CP4" firstAttribute="top" secondItem="v7V-dR-2SR" secondAttribute="bottom" id="OtS-xX-dho"/>
+                            <constraint firstItem="5oK-AI-CP4" firstAttribute="leading" secondItem="lLf-QO-K8P" secondAttribute="leading" id="akI-uI-Csy"/>
+                            <constraint firstItem="WRK-hO-f5H" firstAttribute="top" secondItem="5oK-AI-CP4" secondAttribute="bottom" id="hI0-iC-ACu"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="300"/>
+                    <connections>
+                        <outlet property="detailView" destination="MmW-K6-nd5" id="CG9-9O-0uj"/>
+                        <outlet property="detailWidthConstraint" destination="asp-iR-ux8" id="yE9-ja-ucH"/>
+                        <outlet property="leadingToMasterConstraint" destination="akI-uI-Csy" id="Vpz-zN-sV8"/>
+                        <outlet property="masterView" destination="5oK-AI-CP4" id="AX7-EE-YiC"/>
+                        <outlet property="masterWidthConstraint" destination="03v-9D-mS7" id="ZEl-jX-1zf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuI-5B-Zgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="248"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="4gG-qP-Eiw">
+            <objects>
+                <viewController id="GrU-j2-GxM" customClass="DetailViewController" customModule="AniSplitViewSimple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oh6-aQ-Mrx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vo2-Fv-bGM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3lp-xM-SN0">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="280"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hif-kz-XBL">
+                                <rect key="frame" x="139" y="53" width="122" height="30"/>
+                                <state key="normal" title="hide/show Master"/>
+                                <connections>
+                                    <action selector="hideShowMaster" destination="GrU-j2-GxM" eventType="touchUpInside" id="dvg-i7-dG0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OG-6n-jtm">
+                                <rect key="frame" x="178" y="16" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8596754808" green="0.77652425700000005" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9OG-6n-jtm" firstAttribute="top" secondItem="3lp-xM-SN0" secondAttribute="topMargin" constant="16" id="060-s0-WLW"/>
+                            <constraint firstItem="9OG-6n-jtm" firstAttribute="centerX" secondItem="3lp-xM-SN0" secondAttribute="centerX" id="1Bj-bs-oNj"/>
+                            <constraint firstItem="Hif-kz-XBL" firstAttribute="top" secondItem="9OG-6n-jtm" secondAttribute="bottom" constant="16" id="3ii-tr-BN9"/>
+                            <constraint firstItem="Hif-kz-XBL" firstAttribute="centerX" secondItem="9OG-6n-jtm" secondAttribute="centerX" id="Nr7-db-ghw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dF9-rZ-STi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="896"/>
+        </scene>
+    </scenes>
+</document>

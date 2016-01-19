@@ -8,24 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		B66E18C51C4DDFC200A88905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18C41C4DDFC200A88905 /* AppDelegate.swift */; };
-		B66E18C71C4DDFC200A88905 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18C61C4DDFC200A88905 /* ViewController.swift */; };
-		B66E18CA1C4DDFC200A88905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66E18C81C4DDFC200A88905 /* Main.storyboard */; };
 		B66E18CC1C4DDFC200A88905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66E18CB1C4DDFC200A88905 /* Assets.xcassets */; };
 		B66E18CF1C4DDFC200A88905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66E18CD1C4DDFC200A88905 /* LaunchScreen.storyboard */; };
+		B66E18DB1C4DE01900A88905 /* AnimatingSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18D71C4DE01900A88905 /* AnimatingSplitViewController.swift */; };
+		B66E18DC1C4DE01900A88905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66E18D81C4DE01900A88905 /* Main.storyboard */; };
+		B66E18DD1C4DE01900A88905 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18D91C4DE01900A88905 /* MasterViewController.swift */; };
+		B66E18DE1C4DE01900A88905 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18DA1C4DE01900A88905 /* DetailViewController.swift */; };
+		B66E18E61C4DE08C00A88905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18E51C4DE08C00A88905 /* AppDelegate.swift */; };
+		B66E18ED1C4DE08C00A88905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66E18EC1C4DE08C00A88905 /* Assets.xcassets */; };
+		B66E18F01C4DE08C00A88905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66E18EE1C4DE08C00A88905 /* LaunchScreen.storyboard */; };
+		B66E18F91C4DE0ED00A88905 /* AnimatingSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18F51C4DE0ED00A88905 /* AnimatingSplitViewController.swift */; };
+		B66E18FA1C4DE0ED00A88905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66E18F61C4DE0ED00A88905 /* Main.storyboard */; };
+		B66E18FB1C4DE0ED00A88905 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18F71C4DE0ED00A88905 /* MasterViewController.swift */; };
+		B66E18FC1C4DE0ED00A88905 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E18F81C4DE0ED00A88905 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B66E18C11C4DDFC200A88905 /* AniSplitView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AniSplitView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66E18C41C4DDFC200A88905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B66E18C61C4DDFC200A88905 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B66E18C91C4DDFC200A88905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B66E18CB1C4DDFC200A88905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66E18CE1C4DDFC200A88905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66E18D01C4DDFC200A88905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66E18D61C4DDFF700A88905 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B66E18D71C4DE01900A88905 /* AnimatingSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingSplitViewController.swift; sourceTree = "<group>"; };
+		B66E18D81C4DE01900A88905 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B66E18D91C4DE01900A88905 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		B66E18DA1C4DE01900A88905 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B66E18E31C4DE08C00A88905 /* AniSplitViewSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AniSplitViewSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66E18E51C4DE08C00A88905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B66E18EC1C4DE08C00A88905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B66E18EF1C4DE08C00A88905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B66E18F11C4DE08C00A88905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66E18F51C4DE0ED00A88905 /* AnimatingSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingSplitViewController.swift; sourceTree = "<group>"; };
+		B66E18F61C4DE0ED00A88905 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B66E18F71C4DE0ED00A88905 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		B66E18F81C4DE0ED00A88905 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B66E18BE1C4DDFC200A88905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66E18E01C4DE08C00A88905 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +66,9 @@
 		B66E18B81C4DDFC200A88905 = {
 			isa = PBXGroup;
 			children = (
+				B66E18D61C4DDFF700A88905 /* README.md */,
 				B66E18C31C4DDFC200A88905 /* AniSplitView */,
+				B66E18E41C4DE08C00A88905 /* AniSplitViewSimple */,
 				B66E18C21C4DDFC200A88905 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B66E18C11C4DDFC200A88905 /* AniSplitView.app */,
+				B66E18E31C4DE08C00A88905 /* AniSplitViewSimple.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +85,31 @@
 		B66E18C31C4DDFC200A88905 /* AniSplitView */ = {
 			isa = PBXGroup;
 			children = (
+				B66E18D81C4DE01900A88905 /* Main.storyboard */,
+				B66E18D71C4DE01900A88905 /* AnimatingSplitViewController.swift */,
+				B66E18DA1C4DE01900A88905 /* DetailViewController.swift */,
+				B66E18D91C4DE01900A88905 /* MasterViewController.swift */,
 				B66E18C41C4DDFC200A88905 /* AppDelegate.swift */,
-				B66E18C61C4DDFC200A88905 /* ViewController.swift */,
-				B66E18C81C4DDFC200A88905 /* Main.storyboard */,
 				B66E18CB1C4DDFC200A88905 /* Assets.xcassets */,
 				B66E18CD1C4DDFC200A88905 /* LaunchScreen.storyboard */,
 				B66E18D01C4DDFC200A88905 /* Info.plist */,
 			);
 			path = AniSplitView;
+			sourceTree = "<group>";
+		};
+		B66E18E41C4DE08C00A88905 /* AniSplitViewSimple */ = {
+			isa = PBXGroup;
+			children = (
+				B66E18F61C4DE0ED00A88905 /* Main.storyboard */,
+				B66E18F51C4DE0ED00A88905 /* AnimatingSplitViewController.swift */,
+				B66E18F71C4DE0ED00A88905 /* MasterViewController.swift */,
+				B66E18F81C4DE0ED00A88905 /* DetailViewController.swift */,
+				B66E18E51C4DE08C00A88905 /* AppDelegate.swift */,
+				B66E18EC1C4DE08C00A88905 /* Assets.xcassets */,
+				B66E18EE1C4DE08C00A88905 /* LaunchScreen.storyboard */,
+				B66E18F11C4DE08C00A88905 /* Info.plist */,
+			);
+			path = AniSplitViewSimple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +132,23 @@
 			productReference = B66E18C11C4DDFC200A88905 /* AniSplitView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B66E18E21C4DE08C00A88905 /* AniSplitViewSimple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66E18F21C4DE08C00A88905 /* Build configuration list for PBXNativeTarget "AniSplitViewSimple" */;
+			buildPhases = (
+				B66E18DF1C4DE08C00A88905 /* Sources */,
+				B66E18E01C4DE08C00A88905 /* Frameworks */,
+				B66E18E11C4DE08C00A88905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AniSplitViewSimple;
+			productName = AniSplitViewSimple;
+			productReference = B66E18E31C4DE08C00A88905 /* AniSplitViewSimple.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +160,9 @@
 				ORGANIZATIONNAME = "Eric Elfner";
 				TargetAttributes = {
 					B66E18C01C4DDFC200A88905 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B66E18E21C4DE08C00A88905 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -113,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				B66E18C01C4DDFC200A88905 /* AniSplitView */,
+				B66E18E21C4DE08C00A88905 /* AniSplitViewSimple */,
 			);
 		};
 /* End PBXProject section */
@@ -122,9 +191,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66E18DC1C4DE01900A88905 /* Main.storyboard in Resources */,
 				B66E18CF1C4DDFC200A88905 /* LaunchScreen.storyboard in Resources */,
 				B66E18CC1C4DDFC200A88905 /* Assets.xcassets in Resources */,
-				B66E18CA1C4DDFC200A88905 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66E18E11C4DE08C00A88905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66E18FA1C4DE0ED00A88905 /* Main.storyboard in Resources */,
+				B66E18F01C4DE08C00A88905 /* LaunchScreen.storyboard in Resources */,
+				B66E18ED1C4DE08C00A88905 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,26 +214,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66E18C71C4DDFC200A88905 /* ViewController.swift in Sources */,
+				B66E18DB1C4DE01900A88905 /* AnimatingSplitViewController.swift in Sources */,
 				B66E18C51C4DDFC200A88905 /* AppDelegate.swift in Sources */,
+				B66E18DD1C4DE01900A88905 /* MasterViewController.swift in Sources */,
+				B66E18DE1C4DE01900A88905 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66E18DF1C4DE08C00A88905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66E18F91C4DE0ED00A88905 /* AnimatingSplitViewController.swift in Sources */,
+				B66E18E61C4DE08C00A88905 /* AppDelegate.swift in Sources */,
+				B66E18FB1C4DE0ED00A88905 /* MasterViewController.swift in Sources */,
+				B66E18FC1C4DE0ED00A88905 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B66E18C81C4DDFC200A88905 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B66E18C91C4DDFC200A88905 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B66E18CD1C4DDFC200A88905 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B66E18CE1C4DDFC200A88905 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B66E18EE1C4DE08C00A88905 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B66E18EF1C4DE08C00A88905 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -250,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AniSplitView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcage.AniSplitView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,8 +354,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AniSplitView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcage.AniSplitView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B66E18F31C4DE08C00A88905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AniSplitViewSimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcage.AniSplitViewSimple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B66E18F41C4DE08C00A88905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AniSplitViewSimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcage.AniSplitViewSimple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -284,6 +402,14 @@
 			buildConfigurations = (
 				B66E18D41C4DDFC200A88905 /* Debug */,
 				B66E18D51C4DDFC200A88905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B66E18F21C4DE08C00A88905 /* Build configuration list for PBXNativeTarget "AniSplitViewSimple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66E18F31C4DE08C00A88905 /* Debug */,
+				B66E18F41C4DE08C00A88905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
