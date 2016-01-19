@@ -67,8 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				B66E18D61C4DDFF700A88905 /* README.md */,
-				B66E18C31C4DDFC200A88905 /* AniSplitView */,
 				B66E18E41C4DE08C00A88905 /* AniSplitViewSimple */,
+				B66E18C31C4DDFC200A88905 /* AniSplitView-NotRecommended */,
 				B66E18C21C4DDFC200A88905 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +82,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B66E18C31C4DDFC200A88905 /* AniSplitView */ = {
+		B66E18C31C4DDFC200A88905 /* AniSplitView-NotRecommended */ = {
 			isa = PBXGroup;
 			children = (
 				B66E18D81C4DE01900A88905 /* Main.storyboard */,
@@ -94,6 +94,7 @@
 				B66E18CD1C4DDFC200A88905 /* LaunchScreen.storyboard */,
 				B66E18D01C4DDFC200A88905 /* Info.plist */,
 			);
+			name = "AniSplitView-NotRecommended";
 			path = AniSplitView;
 			sourceTree = "<group>";
 		};
@@ -404,6 +405,7 @@
 				B66E18D51C4DDFC200A88905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B66E18F21C4DE08C00A88905 /* Build configuration list for PBXNativeTarget "AniSplitViewSimple" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +414,7 @@
 				B66E18F41C4DE08C00A88905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
