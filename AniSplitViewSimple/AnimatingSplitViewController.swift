@@ -17,6 +17,7 @@ let kIpadSplitLandscapeWidth:CGFloat = 507
 let kIphone5Height:CGFloat = 568
 let kIphone6Height:CGFloat = 667
 
+// MARK: enum SplitState
 enum SplitState {
     case WideMasterDetail
     case WideDetail
@@ -30,6 +31,7 @@ enum SplitState {
         return (self == .WideMasterDetail) || (self == .NarrowMaster)
     }
 }
+// MARK: Protocols
 protocol AnimatingSplitViewControllerDelegate {
     func showDetail()
     func showMaster()
@@ -63,17 +65,15 @@ class AnimatingSplitViewController: UIViewController {
     // State Variables
     private var _masterHasFocus = true
     private var _splitState:SplitState = .NarrowMaster
-    private var lastFullWidth:CGFloat = 0.0
     
     var constraintsLoaded = false
     
     // MARK: - View Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         _masterHasFocus = true
-        lastFullWidth = view.frame.width
+        //lastFullWidth = view.frame.width
         _splitState = .NarrowMaster
     }
     override func updateViewConstraints() {
@@ -91,9 +91,9 @@ class AnimatingSplitViewController: UIViewController {
         updateViewForWidth(size.width)
     }
 
+    // MARK: - Split view manipulation
     private func updateViewForWidth(width:CGFloat) {
-        lastFullWidth = width
-        let bIsWide = (lastFullWidth >= splitOnWidth) // Different than size classes
+        let bIsWide = (width >= splitOnWidth) // Different than size classes
         let bWasWide = _splitState.splitable()
         var newState = _splitState
         
@@ -108,29 +108,32 @@ class AnimatingSplitViewController: UIViewController {
         else { // -> Narrow
             newState = _masterHasFocus ? .NarrowMaster : .NarrowDetail
         }
-        constrainViewForState(newState)
+        constrainViewForState(newState, withFullWidth:width)
     }
-    private func constrainViewForState(state:SplitState) {
-        let splitMasterWidth = max(masterMinWidth, min(masterMaxWidth, lastFullWidth / 2.0))
+    private func constrainViewForState(state:SplitState, withFullWidth:CGFloat = -1) {
+        // Must allow destination width to be supplied on device rotation operation, else use view.frame.
+        let fullWidth = (withFullWidth == -1) ? view.frame.width : withFullWidth
+        
+        let splitMasterWidth = max(masterMinWidth, min(masterMaxWidth, fullWidth / 2.0))
         var masterWidth = CGFloat(0)
         var detailWidth = CGFloat(0)
         var masterOffset = CGFloat(0)
         switch state {
         case .NarrowDetail :
-            masterWidth = lastFullWidth
-            detailWidth = lastFullWidth
-            masterOffset = -lastFullWidth
+            masterWidth = fullWidth
+            detailWidth = fullWidth
+            masterOffset = -fullWidth
         case .NarrowMaster :
-            masterWidth = lastFullWidth
-            detailWidth = lastFullWidth
+            masterWidth = fullWidth
+            detailWidth = fullWidth
             masterOffset = CGFloat(0)
         case .WideDetail :
             masterWidth = splitMasterWidth
-            detailWidth = lastFullWidth
+            detailWidth = fullWidth
             masterOffset = -splitMasterWidth
         case .WideMasterDetail :
             masterWidth = splitMasterWidth
-            detailWidth = lastFullWidth - splitMasterWidth
+            detailWidth = fullWidth - splitMasterWidth
             masterOffset = CGFloat(0)
         }
         _splitState = state
@@ -143,11 +146,10 @@ class AnimatingSplitViewController: UIViewController {
         }
     }
     
-    // Mark: - Segue. 
-    // By adding Container controls to a view in IB, you will get prepareForSegue on init and
-    // we will wire up delegates to this AnimatingSplitViewController to enable callbacks.
-    
+    // Mark: - Segue Methods
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // By adding Container controls to a view in IB, you will get prepareForSegue on init and
+        // we will wire up delegates to this AnimatingSplitViewController to enable callbacks.
         if var master = segue.destinationViewController as? AnimatingSplitMasterViewController {
             master.splitDelegate = self as AnimatingSplitViewControllerDelegate
         }
