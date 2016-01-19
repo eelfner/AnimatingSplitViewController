@@ -4,6 +4,9 @@ This project has 2 examples (Targets/Apps) of using the AnimationSplitViewContro
 a demonstration of a concept than a widget to plug in to an App.
 ![Split Examples](./Split3Ex.png)
 
+*Note:* This project only contains the UI manipulations. The data flow is left a job for you. (Or, if I do some more
+I might post and update, but think that there are different ways one might go, so think it is unlikely.)
+
 AniSplitView - Has constraints created in code. Not recommended, but kinda cool because it configures itself.
 AniSplitViewSimple - The constraints must be set in IB and the IBOutlets set for the views and 3 primary constraints.
 
